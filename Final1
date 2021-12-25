@@ -1,0 +1,28 @@
+Ejercicio 1
+1) Un programa recibe por stack la direccion de incio de un arreglo de 20 elementos, recorre el arreglo y toda vez que encuentra un elemento no-nulo copia
+ese valor en un periferico que esta mapeado en la direccion C2C10048h La escritura del periferico debe ser implementada mediante una subrutina 
+que recibe por stack el valor a escribir y no devuelve arguamentos Programa princiaal y rutina deben ser declarados en el mismo modulo.
+
+Ejercicio 2
+2) Un procesador arc ejecuta la siguiente instrucción 
+ orcc  %r10, %r0, %r7
+para lo cual utiliza el siguiente microcódigo 
+1608: IF R[IR[13]] THEN GOTO 1610;
+ 1609: R[rd] ← ORCC(R[rs1],R[rs2]); 
+GOTO 2047;
+1610: R[temp0] ← SIMM13(R[ir]); 
+1611: R[rd] ← ORCC(R[rs1],R[temp0]); 
+GOTO 2047;
+Se pide indicar, para el instante en que se está ejecutando la microinstrucción 1609:
+ a. Todos los bits contenidos en el registro de microinstrucciones
+ b. Todos los bits de cada una de las entradas del multiplexor de direcciones de la memoria de control
+ c. Entradas y salidas de la lógica de control de saltos
+ d. Entradas y salidas de decodificador del bus A
+ e. Entradas y salidas de la ALU  
+
+
+Ejercicio 3
+3)
+a) Que significa pasar argumentos a una subrutina? como? para que?. Repetir este analisis para el caso de una macro.
+b) Al diseñar la estructura de una memoria cache entre otras cosas es necesario definir el tamaño total de la memoria cache y tambien el tamaño de los bloques en que se divide.
+Analizar ventajas y desventajas de un tamaño relativamente pequeño de los bloques de cache
